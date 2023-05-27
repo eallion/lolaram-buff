@@ -65,7 +65,7 @@ export default function Home() {
                         size="large"
                         value={keywords}
                         onChange={({ target: { value }}) => setKeywords(value)}
-                        placeholder="英雄名称/昵称，支持拼音与兽字母，支持输入多个以逗号隔开"
+                        placeholder="英雄名称/昵称，支持拼音与首字母，支持输入多个以逗号隔开"
                     />
                     <Radio.Group
                         className="filter-position"
