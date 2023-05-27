@@ -95,7 +95,7 @@ export default function Home() {
                         width: 250,
                         render: (name, { avatar }) => (
                             <div className="column-name">
-                                <img className="avatar" src={`${location.pathname}avatar/${avatar}.png`} alt={name} />
+                                <img className="avatar" src={`${window.location.pathname}avatar/${avatar}.png`} alt={name} />
                                 <span className="column-name-text">{name}</span>
                             </div>
                         ),
