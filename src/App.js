@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { Input, Space } from 'antd';
+import config from './config';
+import Item from './item';
 
-function App() {
+const { Search } = Input;
+
+export default function Home() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <main>
+        <div className="header">
+          <Search />
+        </div>
+        <div className="list">
+          <Space size={[8, 16]} wrap>
+            {config.map(item => <Item key={item.name} {...item} />)}
+          </Space>
+        </div>
+      </main>
+  )
 }
-
-export default App;
