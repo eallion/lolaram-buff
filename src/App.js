@@ -106,9 +106,9 @@ export default function Home() {
                         width: 120,
                         render: status => (
                             <>
-                                {status > 0 && <Tag color="red">增强</Tag>}
+                                {status > 0 && <Tag color="green">增强</Tag>}
                                 {status === 0 && <Tag>平衡</Tag>}
-                                {status < 0 && <Tag color="green">削弱</Tag>}
+                                {status < 0 && <Tag color="red">削弱</Tag>}
                             </>
                         ),
                     }, {
