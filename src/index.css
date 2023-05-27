@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #111d29;
+  padding: 16px 32px;
 }
 
 code {
@@ -13,9 +15,68 @@ code {
 }
 
 .header {
+  margin-bottom: 16px;
+}
 
+.title {
+  color: white
+}
+
+.filter {
+  display: flex;
+}
+
+.filter-search {
+  width: 500px;
+}
+
+.filter-position {
+  margin: 0 16px;
 }
 
 .list {
+}
 
+.column-name {
+  color: white;
+  font-weight: bold;
+  line-height: 48px;
+  padding-left: 56px;
+}
+
+.column-name-text {
+  vertical-align: center;
+}
+
+.avatar {
+  height: 48px;
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.enhance {
+  color: lightcoral;
+}
+
+.abate {
+  color: aquamarine;
+}
+
+.info {
+  color: deepskyblue;
+}
+
+.author {
+  position: fixed;
+  color: grey;
+  font-weight: bold;
+  right: 32px;
+  top: 32px;
+  cursor: pointer;
+}
+
+.author:hover {
+  color: dodgerblue;
 }
