@@ -42,7 +42,7 @@ export default function Home() {
             })
             .filter(item => {
                 if (keywords) {
-                    const sections = keywords.replace('，', ',').split(',');
+                    const sections = keywords.replace('，', ',').split(',').filter(i => i);
                     return sections.some(str => item.searchKey.includes(str.replaceAll(' ', '')));
                 } else {
                     return true;
@@ -86,6 +86,7 @@ export default function Home() {
             </div>
             <div className="list">
                 <Table
+                    rowKey="name"
                     dataSource={getDataSource()}
                     pagination={false}
                     scroll={{ y: 'calc(100vh - 260px)' }}
