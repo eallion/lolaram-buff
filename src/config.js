@@ -409,7 +409,7 @@ export default [{
         value: 85,
     }, {
         type: 'cs',
-        value: 105,
+        value: 115,
     }, {
         type: 'cd',
         value: '-20',

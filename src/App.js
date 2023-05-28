@@ -38,7 +38,8 @@ export default function Home() {
                 return attr === '全部' ||
                     (attr === '增强' && item.status > 0) ||
                     (attr === '平衡' && item.status === 0) ||
-                    (attr === '削弱' && item.status < 0)
+                    (attr === '削弱' && item.status < 0) ||
+                    (attr === '过分' && item.info.length >= 3)
             })
             .filter(item => {
                 if (keywords) {
@@ -80,7 +81,7 @@ export default function Home() {
                         onChange={({ target: { value }}) => setAttr(value)}
                         size="large"
                         optionType="button"
-                        options={['全部', '增强', '平衡', '削弱']}
+                        options={['全部', '增强', '平衡', '削弱', '过分']}
                     />
                 </div>
             </div>
