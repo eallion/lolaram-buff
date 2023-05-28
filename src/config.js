@@ -531,7 +531,7 @@ export default [{
     }],
     type: ['战士'],
 },  {
-    name: '暴走萝莉-金克斯',
+    name: '暴走萝莉-金克丝',
     avatar: 'jks2',
     alias: [],
     info: [{
@@ -1463,7 +1463,7 @@ export default [{
 }, {
     name: '腕豪-瑟提',
     avatar: 'wh',
-    alias: [],
+    alias: ['劲夫'],
     info: [{
         type: 'sc',
         value: 90,
@@ -1776,4 +1776,19 @@ export default [{
         value: 90
     }],
     type: ['法师', '刺客'],
+}, {
+    name: '星界游神-巴德',
+    avatar: 'bd',
+    alias: [],
+    info: [{
+        type: 'sc',
+        value: 115
+    }, {
+        type: 'cs',
+        value: 80
+    }, {
+        type: 'zl',
+        value: '+20'
+    }],
+    type: ['辅助', '射手'],
 }];
