@@ -73,10 +73,22 @@ code {
   color: grey;
   font-weight: bold;
   right: 32px;
-  top: 32px;
+  top: 16px;
   cursor: pointer;
 }
 
 .author:hover {
   color: dodgerblue;
+}
+
+@media (max-width: 800px) {
+  .filter {
+    display: block;
+  }
+  .filter-search {
+    width: 100%;
+  }
+  .filter-position {
+    margin: 8px 0;
+  }
 }

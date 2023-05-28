@@ -339,13 +339,16 @@ export default [{
 }, {
     name: '寡妇制造者-伊芙琳',
     avatar: 'gf',
-    alias: ['痛男'],
+    alias: [],
     info: [{
         type: 'sc',
-        value: 115,
+        value: 110,
     }, {
         type: 'cs',
         value: 85,
+    }, {
+        type: 'rx',
+        value: '+20',
     }],
     type: ['刺客'],
 },  {
