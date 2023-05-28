@@ -790,7 +790,7 @@ export default [{
         type: 'cs',
         value: 105,
     }, {
-        type: 'cs',
+        type: 'hd',
         value: '-20',
     }],
     type: ['辅助'],
