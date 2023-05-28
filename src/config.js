@@ -381,7 +381,7 @@ export default [{
     avatar: 'gt',
     alias: ['狗头'],
     info: [{
-        type: 'cs',
+        type: 'sc',
         value: 95,
     }, {
         type: 'cs',
