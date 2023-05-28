@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { Input, Space, ConfigProvider, theme, Table, Radio, Tag } from 'antd';
+import { Input, Space, ConfigProvider, theme, Table, Radio, Tag, Typography  } from 'antd';
 import config, { types } from './config';
 import getDataSource from './getDataSource';
 
+const { Paragraph } = Typography;
 const dataSource = getDataSource(config);
 
 export default function Home() {
@@ -51,6 +52,17 @@ export default function Home() {
             });
     }
 
+    const getCopyText = ({ name, info }) => {
+        if (info.length > 0) {
+            return `${name}：${info.map(i => {
+                const configItem = types[i.type];
+                return i.type === 'qt' ? i.value.replace(/(<[\s\S]*?>)/g, '') : configItem.text.replace('value', i.value);
+            }).join('，')}`;
+        } else {
+            return  `${name}：无修改`
+        }
+    }
+
     return (
         <ConfigProvider
             theme={{
@@ -95,6 +107,7 @@ export default function Home() {
                         title: '英雄',
                         dataIndex: 'name',
                         width: 250,
+                        fixed: 'left',
                         render: (name, { avatar }) => (
                             <div className="column-name">
                                 <img className="avatar" src={`${window.location.pathname}avatar/${avatar}.png`} alt={name} />
@@ -147,6 +160,12 @@ export default function Home() {
                         width: 120,
                         sorter: (a, b) => createSort(a, b, 'sc'),
                         render: (sc, { info }) => renderSingleAttr(info, 'cs'),
+                    }, {
+                        title: '一键复制',
+                        dataIndex: 'operation',
+                        width: 120,
+                        fixed: 'right',
+                        render: (_c, record) => <Paragraph copyable={{ text: getCopyText(record) }} />
                     }]}
                 />
             </div>
