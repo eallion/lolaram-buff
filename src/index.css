@@ -34,10 +34,21 @@ code {
   margin: 0 16px;
 }
 
+.mobile-filter {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-filter .ant-select {
+  width: 48%;
+}
+
 .list {
 }
 
 .column-name {
+  position: relative;
   color: white;
   font-weight: bold;
   line-height: 48px;
@@ -51,7 +62,7 @@ code {
 .avatar {
   height: 48px;
   position: absolute;
-  left: 16px;
+  left: 0;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -79,6 +90,13 @@ code {
 
 .author:hover {
   color: dodgerblue;
+}
+
+.time {
+  position: fixed;
+  bottom: 4px;
+  right: 32px;
+  color: grey;
 }
 
 @media (max-width: 800px) {

@@ -1488,6 +1488,9 @@ export default [{
     }, {
         type: 'hd',
         value: '-20',
+    }, {
+        type: 'zl',
+        value: '-20',
     }],
     type: ['战士'],
 }, {

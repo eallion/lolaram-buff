@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Input, Space, ConfigProvider, theme, Table, Radio, Tag, Typography  } from 'antd';
+import { useState, useLayoutEffect } from 'react';
+import { Input, Space, ConfigProvider, theme, Table, Radio, Tag, Typography, Select } from 'antd';
 import config, { types } from './config';
 import getDataSource from './getDataSource';
 
@@ -7,6 +7,7 @@ const { Paragraph } = Typography;
 const dataSource = getDataSource(config);
 
 export default function Home() {
+    const isMobile = window.innerWidth <= 800;
     const [keywords, setKeywords] = useState('');
     const [position, setPosition] = useState('全部');
     const [attr, setAttr] = useState('全部');
@@ -52,7 +53,7 @@ export default function Home() {
             });
     }
 
-    const getCopyText = ({ name, info }) => {
+    const getCopyText = (name, info) => {
         if (info.length > 0) {
             return `${name}：${info.map(i => {
                 const configItem = types[i.type];
@@ -62,6 +63,38 @@ export default function Home() {
             return  `${name}：无修改`
         }
     }
+
+    const renderStatus = status => (
+        <>
+            {status > 0 && <Tag color="green">增强</Tag>}
+            {status === 0 && <Tag>平衡</Tag>}
+            {status < 0 && <Tag color="red">削弱</Tag>}
+        </>
+    );
+
+    const renderInfo = info => (
+        <Space direction="vertical">
+            {info.length === 0 ? <div>无修改</div> : (
+                info.map((i, index) => {
+                    const configItem = types[i.type];
+                    return (
+                        <div
+                            key={index}
+                            dangerouslySetInnerHTML={{
+                                __html: i.type === 'qt' ? i.value : configItem.text.replace('value', `<span class=${configItem.enhance(i.value) ? 'enhance' : 'abate'}>${i.value}</span>`),
+                            }}
+                        >
+                        </div>
+                    );
+                })
+            )}
+        </Space>
+    );
+
+    const renderCopy = (name, info) => <Paragraph copyable={{ text: getCopyText(name, info) }} />;
+
+    const positionDataSource = ['全部', '战士', '坦克', '辅助', '法师', '刺客', '射手'];
+    const statusDataSource = ['全部', '增强', '平衡', '削弱', '过分'];
 
     return (
         <ConfigProvider
@@ -80,30 +113,65 @@ export default function Home() {
                         onChange={({ target: { value }}) => setKeywords(value)}
                         placeholder="英雄名称/昵称，支持拼音与首字母，支持输入多个以逗号隔开"
                     />
-                    <Radio.Group
-                        className="filter-position"
-                        value={position}
-                        onChange={({ target: { value }}) => setPosition(value)}
-                        size="large"
-                        optionType="button"
-                        options={['全部', '战士', '坦克', '辅助', '法师', '刺客', '射手']}
-                    />
-                    <Radio.Group
-                        value={attr}
-                        onChange={({ target: { value }}) => setAttr(value)}
-                        size="large"
-                        optionType="button"
-                        options={['全部', '增强', '平衡', '削弱', '过分']}
-                    />
+                    {isMobile ? (
+                        <div className="mobile-filter">
+                            <Select
+                                className="mobile-filter-position"
+                                value={position}
+                                onChange={value => setPosition(value)}
+                                size="large"
+                                options={positionDataSource.map(item => ({ label: item === '全部' ? '全部定位' : item, value: item }))}
+                            />
+                            <Select
+                                value={attr}
+                                onChange={value => setAttr(value)}
+                                size="large"
+                                options={statusDataSource.map(item => ({ label: item === '全部' ? '全部属性' : item, value: item }))}
+                            />
+                        </div>
+                    ) : (
+                        <>
+                            <Radio.Group
+                                className="filter-position"
+                                value={position}
+                                onChange={({ target: { value }}) => setPosition(value)}
+                                size="large"
+                                optionType="button"
+                                options={positionDataSource}
+                            />
+                            <Radio.Group
+                                value={attr}
+                                onChange={({ target: { value }}) => setAttr(value)}
+                                size="large"
+                                optionType="button"
+                                options={['全部', '增强', '平衡', '削弱', '过分']}
+                            />
+                        </>
+                    )}
                 </div>
             </div>
             <div className="list">
                 <Table
+                    size={isMobile ? 'small' : 'middle'}
                     rowKey="name"
                     dataSource={getDataSource()}
                     pagination={false}
-                    scroll={{ y: 'calc(100vh - 260px)' }}
-                    columns={[{
+                    scroll={{ y: isMobile ? 'calc(100vh - 320px)' : 'calc(100vh - 260px)' }}
+                    columns={isMobile ? [{
+                        title: '英雄',
+                        dataIndex: 'name',
+                        render: (name, { avatar, status, info }) => (
+                            <div>
+                                <div className="column-name">
+                                    <img className="avatar" src={`${window.location.pathname}avatar/${avatar}.png`} alt={name} />
+                                    <span className="column-name-text">{name}</span>
+                                    &nbsp;
+                                    {renderStatus(status)}
+                                </div>
+                                {renderInfo(info)}
+                            </div>
+                        ),
+                    }] : [{
                         title: '英雄',
                         dataIndex: 'name',
                         width: 250,
@@ -118,35 +186,12 @@ export default function Home() {
                         title: '属性',
                         dataIndex: 'status',
                         width: 120,
-                        render: status => (
-                            <>
-                                {status > 0 && <Tag color="green">增强</Tag>}
-                                {status === 0 && <Tag>平衡</Tag>}
-                                {status < 0 && <Tag color="red">削弱</Tag>}
-                            </>
-                        ),
+                        render: renderStatus,
                     }, {
                         title: '属性总览',
                         dataIndex: 'info',
                         width: 300,
-                        render: (info) => (
-                            <Space direction="vertical">
-                                {info.length === 0 ? <div>无修改</div> : (
-                                    info.map((i, index) => {
-                                        const configItem = types[i.type];
-                                        return (
-                                            <div
-                                                key={index}
-                                                dangerouslySetInnerHTML={{
-                                                    __html: i.type === 'qt' ? i.value : configItem.text.replace('value', `<span class=${configItem.enhance(i.value) ? 'enhance' : 'abate'}>${i.value}</span>`),
-                                                }}
-                                            >
-                                            </div>
-                                        );
-                                    })
-                                )}
-                            </Space>
-                        ),
+                        render: renderInfo,
                     }, {
                         title: '输出',
                         dataIndex: 'sc',
@@ -165,10 +210,11 @@ export default function Home() {
                         dataIndex: 'operation',
                         width: 120,
                         fixed: 'right',
-                        render: (_c, record) => <Paragraph copyable={{ text: getCopyText(record) }} />
+                        render: (_c, { name, info }) => renderCopy(name, info),
                     }]}
                 />
             </div>
+            <div className="time">更新时间：2023/05/29 20:40:00</div>
        </ConfigProvider>
-   )
+   );
 }
