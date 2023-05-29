@@ -1141,7 +1141,7 @@ export default [{
     alias: ['草履虫'],
     info: [{
         type: 'sc',
-        value: 115,
+        value: 110,
     }, {
         type: 'cs',
         value: 80,
