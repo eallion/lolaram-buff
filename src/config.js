@@ -631,6 +631,9 @@ export default [{
     avatar: 'jt',
     alias: [],
     info: [{
+        type: 'sc',
+        value: 105,
+    }, {
         type: 'cs',
         value: 95,
     }],
@@ -645,7 +648,10 @@ export default [{
     name: '暴怒骑士-克烈',
     avatar: 'kl',
     alias: [],
-    info: [],
+    info: [{
+        type: 'sc',
+        value: 105,
+    }],
     type: ['战士'],
 }, {
     name: '狂暴之心-凯南',
@@ -990,6 +996,9 @@ export default [{
     avatar: 'ne',
     alias: [],
     info: [{
+        type: 'sc',
+        value: 105,
+    }, {
         type: 'cs',
         value: 95,
     }],
@@ -1138,7 +1147,7 @@ export default [{
 }, {
     name: '元素女皇-奇亚娜',
     avatar: 'qyn',
-    alias: ['草履虫'],
+    alias: ['草履虫', '超模'],
     info: [{
         type: 'sc',
         value: 115,
@@ -1223,7 +1232,10 @@ export default [{
     name: '暮光之眼-慎',
     avatar: 's',
     alias: [],
-    info: [],
+    info: [{
+        type: 'cs',
+        value: 105,
+    },],
     type: ['坦克', '战士'],
 }, {
     name: '死亡颂唱者-卡尔萨斯',
@@ -1686,7 +1698,7 @@ export default [{
 }, {
     name: '疾风剑豪-亚索',
     avatar: 'ys',
-    alias: ['快乐风男'],
+    alias: ['快乐风男', '托儿索'],
     info: [],
     type: ['战士', '刺客'],
 }, {
@@ -1770,7 +1782,7 @@ export default [{
     alias: [],
     info: [{
         type: 'sc',
-        value: 105
+        value: 110
     }, {
         type: 'cs',
         value: 90
@@ -1789,6 +1801,18 @@ export default [{
     }, {
         type: 'zl',
         value: '+20'
+    }],
+    type: ['辅助', '射手'],
+}, {
+    name: '明烛-米利欧',
+    avatar: 'mlo',
+    alias: ['丁真'],
+    info: [{
+        type: 'hd',
+        value: '-5'
+    }, {
+        type: 'zl',
+        value: '-5'
     }],
     type: ['辅助', '射手'],
 }];
