@@ -27,7 +27,7 @@ export const types = {
         text: '技能急速：value',
         enhance: (value) => value.startsWith('+'),
     },
-    gx: {
+    gs: {
         text: '攻速收益：value%',
         enhance: (value) => value.startsWith('+'),
     },
@@ -43,6 +43,10 @@ export default [{
     }, {
         type: 'cs',
         value: 105,
+    }, {
+        type: 'qt',
+        value: '<span class="info">被动</span>锻造装备会进入<span class="abate">120秒</span>的冷却时间',
+        enhance: false,
     }],
     type: ['战士', '坦克'],
 }, {
@@ -85,6 +89,10 @@ export default [{
     }, {
         type: 'cs',
         value: 95,
+    }, {
+        type: 'qt',
+        value: '<span class="info">W</span>被动标记时间：<span class="abate">25秒</span>',
+        enhance: false,
     }],
     type: ['射手', '刺客'],
 }, {
@@ -172,13 +180,21 @@ export default [{
     name: '魂锁典狱长-锤石',
     avatar: 'cs',
     alias: [],
-    info: [],
+    info: [{
+        type: 'qt',
+        value: '<span class="info">被动</span>：拾取1个灵魂时获得的计数为<span class="enhance">2</span>',
+        enhance: true,
+    }],
     type: ['辅助', '坦克'],
 }, {
     name: '海洋之灾-普朗克',
     avatar: 'cz',
     alias: ['船长'],
-    info: [],
+    info: [{
+        type: 'qt',
+        value: '<span class="info">Q</span>新增效果：<span class="abate">每秒获得1枚银蛇币</span>',
+        enhance: true,
+    }],
     type: ['刺客', '战士'],
 }, {
     name: '远古恐惧-费德提克',
@@ -220,6 +236,9 @@ export default [{
     }, {
         type: 'cs',
         value: 105,
+    }, {
+        type: 'zl',
+        value: '-20',
     }],
     type: ['法师', '坦克'],
 }, {
@@ -282,7 +301,7 @@ export default [{
 }, {
     name: '探险家-伊泽瑞尔',
     avatar: 'ez',
-    alias: ['EZ', '黄毛'],
+    alias: ['ez', '黄毛'],
     info: [{
         type: 'sc',
         value: 95,
@@ -301,6 +320,10 @@ export default [{
     info: [{
         type: 'cs',
         value: 95,
+    }, {
+        type: 'qt',
+        value: '<span class="info">被动</span>初始时间降低至<span class="enhance">5分钟</span>，冷却时间降低至<span class="enhance">150秒</span>',
+        enhance: true,
     }],
     type: ['法师', '射手'],
 }, {
@@ -386,6 +409,10 @@ export default [{
     }, {
         type: 'cs',
         value: 105,
+    }, {
+        type: 'qt',
+        value: '<span class="info">Q</span>击杀敌方单位增加<span class="enhance">6</span>点伤害；如果是英雄/大型小兵则增加<span class="enhance">24</span>点伤害',
+        enhance: true,
     }],
     type: ['战士', '法师'],
 },  {
@@ -414,7 +441,7 @@ export default [{
         type: 'cd',
         value: '-20',
     }, {
-        type: 'gx',
+        type: 'gs',
         value: '+2.5',
     }, {
         type: 'qt',
@@ -448,7 +475,7 @@ export default [{
         type: 'cd',
         value: '+20',
     }, {
-        type: 'gx',
+        type: 'gs',
         value: '+2.5',
     }],
     type: ['法师'],
@@ -603,7 +630,11 @@ export default [{
     name: '牧魂人-约里克',
     avatar: 'jmr',
     alias: ['掘墓'],
-    info: [],
+    info: [{
+        type: 'qt',
+        value: '<span class="info">被动</span>坟墓所需敌人阵亡数为5<span class="enhance">5</span>',
+        enhance: true,
+    }],
     type: ['战士'],
 }, {
     name: '蒸汽机器人-布里茨',
@@ -770,7 +801,10 @@ export default [{
     alias: [],
     info: [{
         type: 'sc',
-        value: 105
+        value: 105,
+    }, {
+        type: 'hd',
+        value: '+10',
     }],
     type: ['辅助'],
 }, {
@@ -779,10 +813,14 @@ export default [{
     alias: ['龙女'],
     info: [{
         type: 'sc',
-        value: 95
+        value: 95,
     }, {
         type: 'cs',
         value: 95,
+    }, {
+        type: 'qt',
+        value: '每当希瓦娜在其1400单位范围内或她的友方英雄们击杀了一个攻城兵或超级兵，或从敌方一侧的治疗圣物的范围回复效果中获得治疗时，她就会获得<span class="enhance">1永久护甲、魔抗和每秒0.05龙族怒气生成</span>',
+        enhance: true,
     }],
     type: ['法师', '战士'],
 }, {
@@ -791,7 +829,7 @@ export default [{
     alias: [],
     info: [{
         type: 'sc',
-        value: 95
+        value: 95,
     }, {
         type: 'cs',
         value: 105,
@@ -806,7 +844,7 @@ export default [{
     alias: ['狼人'],
     info: [{
         type: 'sc',
-        value: 105
+        value: 105,
     }, {
         type: 'cs',
         value: 95,
@@ -824,7 +862,7 @@ export default [{
     alias: ['老司机'],
     info: [{
         type: 'sc',
-        value: 90
+        value: 90,
     }, {
         type: 'cs',
         value: 110,
@@ -849,7 +887,7 @@ export default [{
     alias: [],
     info: [{
         type: 'qt',
-        value: '<span class="info">E</span>冷却时间12秒削弱至<span  class="abate">16秒</span>',
+        value: '<span class="info">E</span>冷却时间12秒削弱至<span class="abate">16秒</span>',
         enhance: false,
     }],
     type: ['法师'],
@@ -949,7 +987,7 @@ export default [{
 }, {
     name: '永恒梦魇-魔腾',
     avatar: 'my',
-    alias: [],
+    alias: ['noc'],
     info: [{
         type: 'sc',
         value: 110,
@@ -1045,7 +1083,7 @@ export default [{
 }, {
     name: '赏金猎人-厄运小姐',
     avatar: 'nq',
-    alias: ['女枪', '哈哈哈'],
+    alias: ['女枪', '哈哈哈', 'mf'],
     info: [{
         type: 'sc',
         value: 90,
@@ -1395,6 +1433,10 @@ export default [{
     }, {
         type: 'cd',
         value: '-20',
+    }, {
+        type: 'qt',
+        value: '<span class="info">R</span>对小兵造成<span class="abate">50%</span>伤害',
+        enhance: false,
     }],
     type: ['法师'],
 }, {
@@ -1445,7 +1487,7 @@ export default [{
 }, {
     name: '暗夜猎手-薇恩',
     avatar: 'vn',
-    alias: ['VN'],
+    alias: ['vn'],
     info: [{
         type: 'cs',
         value: 95,
@@ -1548,6 +1590,10 @@ export default [{
     info: [{
         type: 'sc',
         value: 105,
+    }, {
+        type: 'qt',
+        value: '<span class="info">W</span>魔盒最多同时存在<span class="abate">6个</span>',
+        enhance: false,
     }],
     type: ['刺客', '法师'],
 }, {
@@ -1606,7 +1652,10 @@ export default [{
     name: '麦林炮手-崔丝塔娜',
     avatar: 'xp',
     alias: ['小炮'],
-    info: [],
+    info: [{
+        type: 'sc',
+        value: 105
+    }],
     type: ['射手'],
 }, {
     name: '雪人骑士-努努',
@@ -1804,6 +1853,10 @@ export default [{
     }, {
         type: 'zl',
         value: '+20'
+    }, {
+        type: 'qt',
+        value: '<span class="info">被动</span>调和之音刷新速率50秒→<span class="enhance">30秒</span>',
+        enhance: true,
     }],
     type: ['辅助', '射手'],
 }, {

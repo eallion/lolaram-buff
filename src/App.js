@@ -45,7 +45,7 @@ export default function Home() {
             })
             .filter(item => {
                 if (keywords) {
-                    const sections = keywords.replace('，', ',').split(',').filter(i => i);
+                    const sections = keywords.toLowerCase().replace('，', ',').split(',').filter(i => i);
                     return sections.some(str => item.searchKey.includes(str.replaceAll(' ', '')));
                 } else {
                     return true;
@@ -214,7 +214,7 @@ export default function Home() {
                     }]}
                 />
             </div>
-            <div className="time">更新时间：2023/05/29 20:40:00</div>
+            <div className="time">更新时间：2023/05/31 00:15:00</div>
        </ConfigProvider>
    );
 }
