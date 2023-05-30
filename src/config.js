@@ -301,7 +301,7 @@ export default [{
 }, {
     name: '探险家-伊泽瑞尔',
     avatar: 'ez',
-    alias: ['ez', '黄毛'],
+    alias: ['ez', '小黄毛'],
     info: [{
         type: 'sc',
         value: 95,
@@ -389,7 +389,7 @@ export default [{
 },  {
     name: '德玛西亚之力-盖伦',
     avatar: 'gl',
-    alias: [],
+    alias: ['草丛伦'],
     info: [{
         type: 'cs',
         value: 95,
@@ -424,7 +424,7 @@ export default [{
 },  {
     name: '齐天大圣-孙悟空',
     avatar: 'h',
-    alias: ['猴'],
+    alias: ['猴哥', '猴子'],
     info: [],
     type: ['战士', '刺客'],
 },  {
@@ -533,7 +533,7 @@ export default [{
 },  {
     name: '灵罗娃娃-格温',
     avatar: 'jd',
-    alias: ['剪刀'],
+    alias: ['剪刀妹'],
     info: [{
         type: 'sc',
         value: 105,
@@ -560,7 +560,7 @@ export default [{
 },  {
     name: '暴走萝莉-金克丝',
     avatar: 'jks2',
-    alias: [],
+    alias: ['爆爆'],
     info: [{
         type: 'sc',
         value: 90,
@@ -654,13 +654,13 @@ export default [{
 }, {
     name: '未来守护者-杰斯',
     avatar: 'js2',
-    alias: [],
+    alias: ['杰西'],
     info: [],
     type: ['刺客', '战士'],
 }, {
     name: '酒桶-古拉加斯',
     avatar: 'jt',
-    alias: [],
+    alias: ['几何桶'],
     info: [{
         type: 'sc',
         value: 105,
@@ -709,6 +709,9 @@ export default [{
     info: [{
         type: 'cs',
         value: 95,
+    }, {
+        type: 'gs',
+        value: '+2.5',
     }],
     type: ['法师', '射手'],
 }, {
@@ -1628,7 +1631,11 @@ export default [{
     name: '虚空女皇-卑尔维斯',
     avatar: 'xknh',
     alias: [],
-    info: [],
+    info: [{
+        type: 'qt',
+        value: '<span class="info">被动</span>附近的攻城兵死亡时会获得<span class="enhance">2层</span>紫化度；<span class="info">R</span>被动附近的防御塔被摧毁时会掉落<span class="enhance">特殊的虚空珊瑚</span>',
+        enhance: true,
+    }],
     type: ['战士'],
 }, {
     name: '含羞蓓蕾-莉莉娅',
