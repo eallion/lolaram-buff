@@ -629,7 +629,7 @@ export default [{
     alias: ['掘墓'],
     info: [{
         type: 'qt',
-        value: '<span class="info">被动</span>坟墓所需敌人阵亡数为5<span class="enhance">5</span>',
+        value: '<span class="info">被动</span>坟墓所需敌人阵亡数为<span class="enhance">5</span>',
         enhance: true,
     }],
     type: ['战士'],
