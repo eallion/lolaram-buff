@@ -100,9 +100,6 @@ export default [{
     avatar: 'alf',
     alias: [],
     info: [{
-        type: 'sc',
-        value: 95,
-    }, {
         type: 'zl',
         value: '+20',
     }],
@@ -224,7 +221,10 @@ export default [{
     name: '刀锋舞者-艾瑞莉娅',
     avatar: 'dm',
     alias: ['刀妹'],
-    info: [],
+    info: [{
+        type: 'cd',
+        value: '+20',
+    }],
     type: ['战士'],
 }, {
     name: '扭曲树精-茂凯',
@@ -435,11 +435,8 @@ export default [{
         type: 'sc',
         value: 85,
     }, {
-        type: 'cs',
-        value: 115,
-    }, {
         type: 'cd',
-        value: '-20',
+        value: '-30',
     }, {
         type: 'gs',
         value: '+2.5',
@@ -599,7 +596,7 @@ export default [{
         value: 95,
     }, {
         type: 'cs',
-        value: 105,
+        value: 110,
     }],
     type: ['法师',  '坦克'],
 }, {
@@ -751,16 +748,16 @@ export default [{
     }, {
         type: 'cs',
         value: 90,
+    }, {
+        type: 'gs',
+        value: '+2.5',
     }],
     type: ['射手', '刺客'],
 }, {
     name: '影流之镰-凯隐',
     avatar: 'ky2',
     alias: [],
-    info: [{
-        type: 'sc',
-        value: 105,
-    }],
+    info: [],
     type: ['战士', '刺客'],
 }, {
     name: '幻翎-洛',
@@ -889,6 +886,9 @@ export default [{
     avatar: 'lw',
     alias: [],
     info: [{
+        type: 'cd',
+        value: '-20',
+    }, {
         type: 'qt',
         value: '<span class="info">E</span>冷却时间12秒削弱至<span class="abate">16秒</span>',
         enhance: false,
@@ -1131,7 +1131,7 @@ export default [{
         value: 110,
     }, {
         type: 'cs',
-        value: 85,
+        value: 90,
     }],
     type: ['辅助', '刺客'],
 }, {
@@ -1343,9 +1343,6 @@ export default [{
     info: [{
         type: 'sc',
         value: 95,
-    }, {
-        type: 'cs',
-        value: 105,
     }],
     type: ['射手'],
 }, {
@@ -1458,9 +1455,6 @@ export default [{
     info: [{
         type: 'sc',
         value: 95,
-    }, {
-        type: 'cs',
-        value: 105,
     }],
     type: ['战士'],
 }, {
@@ -1492,6 +1486,9 @@ export default [{
     avatar: 'vn',
     alias: ['vn'],
     info: [{
+        type: 'sc',
+        value: 105,
+    }, {
         type: 'cs',
         value: 95,
     }],
@@ -1632,6 +1629,9 @@ export default [{
     avatar: 'xknh',
     alias: [],
     info: [{
+        type: 'sc',
+        value: 105,
+    }, {
         type: 'qt',
         value: '<span class="info">被动</span>附近的攻城兵死亡时会获得<span class="enhance">2层</span>紫化度；<span class="info">R</span>被动附近的防御塔被摧毁时会掉落<span class="enhance">特殊的虚空珊瑚</span>',
         enhance: true,
@@ -1661,7 +1661,10 @@ export default [{
     alias: ['小炮'],
     info: [{
         type: 'sc',
-        value: 105
+        value: 105,
+    }, {
+        type: 'cs',
+        value: 95,
     }],
     type: ['射手'],
 }, {
@@ -1670,7 +1673,7 @@ export default [{
     alias: [],
     info: [{
         type: 'sc',
-        value: 110
+        value: 110,
     }, {
         type: 'cs',
         value: 90,
@@ -1686,7 +1689,10 @@ export default [{
     name: '猩红收割者-弗拉基米尔',
     avatar: 'xxg',
     alias: ['吸血鬼'],
-    info: [],
+    info: [{
+        type: 'sc',
+        value: 95,
+    }],
     type: ['法师', '战士'],
 }, {
     name: '潮汐海灵-菲兹',
@@ -1694,7 +1700,7 @@ export default [{
     alias: ['小鱼人'],
     info: [{
         type: 'sc',
-        value: 105
+        value: 105,
     }, {
         type: 'cs',
         value: 95,
@@ -1727,16 +1733,16 @@ export default [{
     alias: [],
     info: [{
         type: 'sc',
-        value: 110
+        value: 105,
     }, {
         type: 'cs',
-        value: 90
+        value: 90,
     }, {
         type: 'rx',
-        value: '+20'
+        value: '+20',
     }, {
         type: 'cd',
-        value: '+20'
+        value: '+20',
     }],
     type: ['法师', '刺客'],
 }, {
@@ -1856,7 +1862,7 @@ export default [{
         value: 115
     }, {
         type: 'cs',
-        value: 80
+        value: 85
     }, {
         type: 'zl',
         value: '+20'

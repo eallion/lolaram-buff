@@ -79,7 +79,7 @@ code {
   color: deepskyblue;
 }
 
-.author {
+.update {
   position: fixed;
   color: grey;
   font-weight: bold;
@@ -88,7 +88,7 @@ code {
   cursor: pointer;
 }
 
-.author:hover {
+.update:hover {
   color: dodgerblue;
 }
 

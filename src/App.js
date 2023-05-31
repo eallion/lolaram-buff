@@ -1,6 +1,7 @@
-import { useState, useLayoutEffect } from 'react';
-import { Input, Space, ConfigProvider, theme, Table, Radio, Tag, Typography, Select } from 'antd';
+import { useState } from 'react';
+import { Input, Space, ConfigProvider, theme, Table, Radio, Tag, Typography, Select, Modal, Badge } from 'antd';
 import config, { types } from './config';
+import updateConfig from './updateConfig';
 import getDataSource from './getDataSource';
 
 const { Paragraph } = Typography;
@@ -11,6 +12,7 @@ export default function Home() {
     const [keywords, setKeywords] = useState('');
     const [position, setPosition] = useState('全部');
     const [attr, setAttr] = useState('全部');
+    const [isOpen, setIsOpen] = useState(false);
 
     const renderSingleAttr = (info, type) => {
         const configItem = types[type];
@@ -102,9 +104,11 @@ export default function Home() {
                 algorithm: theme.darkAlgorithm,
             }}
         >
-            <div className="author" onClick={() => window.open('https://space.bilibili.com/3957795')}>@一度的豆豆桑</div>
+            <div className="update" onClick={() => setIsOpen(true)}>
+                <Badge dot>13.11版本更新内容</Badge>
+            </div>
             <div className="header">
-                <h1 className="title">英雄联盟极地大乱斗平衡属性一览 (V13.10)</h1>
+                <h1 className="title">英雄联盟极地大乱斗平衡属性一览 (V13.11)</h1>
                 <div className="filter">
                     <Input
                         className="filter-search"
@@ -214,7 +218,52 @@ export default function Home() {
                     }]}
                 />
             </div>
-            <div className="time">更新时间：2023/05/31 00:15:00</div>
-       </ConfigProvider>
+            <div className="time">更新时间：2023/06/01 01:00:00</div>
+            <Modal
+                title="版本更新"
+                open={isOpen}
+                onCancel={() => setIsOpen(false)}
+                footer={false}
+            >
+                <Table
+                    size="small"
+                    rowKey="avatar"
+                    dataSource={updateConfig}
+                    scroll={{ y: '60vh' }}
+                    pagination={false}
+                    columns={[{
+                        title: '英雄',
+                        dataIndex: 'avatar',
+                        render: (avatar, { info }) => {
+                            const name = config.find(item => item.avatar === avatar).name;
+                            return (
+                                <div>
+                                    <div className="column-name">
+                                        <img className="avatar" src={`${window.location.pathname}avatar/${avatar}.png`} alt={name} />
+                                        <span className="column-name-text">{name}</span>
+                                        &nbsp;
+                                        {renderStatus(info.reduce((total, item) => item.status + total, 0))}
+                                    </div>
+                                    {info.map(({ type, from, to, status, text }) => {
+                                        const configItem = types[type];
+                                        return (
+                                            <div
+                                                dangerouslySetInnerHTML={{
+                                                    __html: type === 'qt' ? text : (
+                                                        configItem.text.replace('value', `<span class='info'>${from}</span>`) +
+                                                        `→<span class='${status > 0 ? 'enhance' : 'abate'}'>${to}</span>${type === 'cd' ? '' : '%'}`
+                                                    ),
+                                                }}
+                                            >
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            );
+                        },
+                    }]}
+                />
+            </Modal>
+        </ConfigProvider>
    );
 }
