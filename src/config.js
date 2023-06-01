@@ -757,7 +757,13 @@ export default [{
     name: '影流之镰-凯隐',
     avatar: 'ky2',
     alias: [],
-    info: [],
+    info: [{
+        type: 'rx',
+        value: '+20',
+    }, {
+        type: 'zl',
+        value: '-20',
+    }],
     type: ['战士', '刺客'],
 }, {
     name: '幻翎-洛',
