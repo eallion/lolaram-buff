@@ -189,7 +189,7 @@ export default [{
     alias: ['船长'],
     info: [{
         type: 'qt',
-        value: '<span class="info">Q</span>新增效果：<span class="abate">每秒获得1枚银蛇币</span>',
+        value: '<span class="info">Q</span>新增效果：<span class="enhance">每秒获得1枚银蛇币</span>',
         enhance: true,
     }],
     type: ['刺客', '战士'],
