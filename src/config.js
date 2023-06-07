@@ -110,7 +110,7 @@ export default [{
     alias: [],
     info: [{
         type: 'cs',
-        value: 95,
+        value: 105,
     }],
     type: ['坦克'],
 }, {
@@ -303,8 +303,8 @@ export default [{
     avatar: 'ez',
     alias: ['ez', '小黄毛'],
     info: [{
-        type: 'sc',
-        value: 95,
+        type: 'cs',
+        value: 103,
     }],
     type: ['射手', '法师'],
 }, {

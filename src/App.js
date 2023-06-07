@@ -207,7 +207,7 @@ export default function Home() {
                         title: '承伤',
                         dataIndex: 'cs',
                         width: 120,
-                        sorter: (a, b) => createSort(a, b, 'sc'),
+                        sorter: (a, b) => createSort(a, b, 'cs'),
                         render: (sc, { info }) => renderSingleAttr(info, 'cs'),
                     }, {
                         title: '一键复制',
@@ -218,7 +218,7 @@ export default function Home() {
                     }]}
                 />
             </div>
-            <div className="time">更新时间：2023/06/01 01:00:00</div>
+            <div className="time">更新时间：2023/06/07 21:20:00</div>
             <Modal
                 title="版本更新"
                 open={isOpen}
