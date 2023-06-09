@@ -1890,4 +1890,16 @@ export default [{
         value: '-5'
     }],
     type: ['辅助', '射手'],
+}, {
+    name: '海兽祭祀-俄洛伊',
+    avatar: 'ely',
+    alias: ['触手妈', '章鱼妈'],
+    info: [{
+        type: 'sc',
+        value: 95,
+    }, {
+        type: 'cs',
+        value: 105,
+    }],
+    type: ['战士'],
 }];
