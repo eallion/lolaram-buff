@@ -70,7 +70,7 @@ export default [{
         value: 110,
     }, {
         type: 'cs',
-        value: 85,
+        value: 90,
     }, {
         type: 'rx',
         value: '+20',
@@ -134,14 +134,20 @@ export default [{
     alias: ['蔡徐坤', '坤坤'],
     info: [{
         type: 'sc',
-        value: 95,
+        value: 90,
+    }, {
+        type: 'hd',
+        value: '-20',
     }],
     type: ['辅助'],
 }, {
     name: '愁云使者-薇古丝',
     avatar: 'aybb',
     alias: ['熬夜波比'],
-    info: [],
+    info: [{
+        type: 'sc',
+        value: 95,
+    }],
     type: ['法师'],
 }, {
     name: '圣锤之毅-波比',
@@ -203,7 +209,10 @@ export default [{
     name: '虚空恐惧-科加斯',
     avatar: 'dcz',
     alias: ['大虫子'],
-    info: [],
+    info: [{
+        type: 'cs',
+        value: 105,
+    }],
     type: ['坦克', '法师'],
 }, {
     name: '荣耀行刑官-德莱文',
@@ -311,7 +320,10 @@ export default [{
     name: '冰晶凤凰-艾尼维亚',
     avatar: 'fh',
     alias: ['冰鸟'],
-    info: [],
+    info: [{
+        type: 'cs',
+        value: 105,
+    }],
     type: ['法师'],
 }, {
     name: '英勇投弹手-库奇',
@@ -550,6 +562,9 @@ export default [{
     avatar: 'jks',
     alias: [],
     info: [{
+        type: 'sc',
+        value: 105,
+    }, {
         type: 'cs',
         value: 97,
     }],
@@ -854,13 +869,19 @@ export default [{
     }, {
         type: 'cs',
         value: 95,
+    }, {
+        type: 'zl',
+        value: '+5',
     }],
     type: ['战士'],
 }, {
     name: '瘟疫之源-图奇',
     avatar: 'ls',
     alias: ['老鼠'],
-    info: [],
+    info: [{
+        type: 'cs',
+        value: 95,
+    }],
     type: ['射手', '法师'],
 }, {
     name: '亡灵战神-塞恩',
@@ -948,10 +969,10 @@ export default [{
     alias: [],
     info: [{
         type: 'sc',
-        value: 92,
+        value: 90,
     }, {
         type: 'cs',
-        value: 108,
+        value: 110,
     }],
     type: ['法师'],
 }, {
