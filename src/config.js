@@ -380,7 +380,7 @@ export default [{
         value: 110,
     }, {
         type: 'cs',
-        value: 85,
+        value: 90,
     }, {
         type: 'rx',
         value: '+20',
@@ -473,11 +473,8 @@ export default [{
 },  {
     name: '沙漠皇帝-阿兹尔',
     avatar: 'hj',
-    alias: ['黄鸡'],
+    alias: ['黄鸡', '沙皇'],
     info: [{
-        type: 'sc',
-        value: 105,
-    }, {
         type: 'cs',
         value: 95,
     }, {
@@ -521,7 +518,7 @@ export default [{
     alias: [],
     info: [{
         type: 'cs',
-        value: 90,
+        value: 95,
     }, {
         type: 'rx',
         value: '+20',
@@ -575,7 +572,7 @@ export default [{
     alias: ['爆爆'],
     info: [{
         type: 'sc',
-        value: 90,
+        value: 95,
     }, {
         type: 'cs',
         value: 105,
@@ -631,6 +628,9 @@ export default [{
     avatar: 'jm2',
     alias: [],
     info: [{
+        type: 'sc',
+        value: 105,
+    }, {
         type: 'cs',
         value: 95,
     }, {
@@ -791,9 +791,6 @@ export default [{
     avatar: 'lb',
     alias: [],
     info: [{
-        type: 'sc',
-        value: 105,
-    }, {
         type: 'cs',
         value: 95,
     }],
@@ -1076,9 +1073,6 @@ export default [{
     avatar: 'nj',
     alias: [],
     info: [{
-        type: 'sc',
-        value: 95,
-    }, {
         type: 'cs',
         value: 105,
     }],
@@ -1221,7 +1215,7 @@ export default [{
         value: 110,
     }, {
         type: 'cs',
-        value: 80,
+        value: 90,
     }, {
         type: 'rx',
         value: '+20',
@@ -1415,6 +1409,9 @@ export default [{
     info: [{
         type: 'cs',
         value: 95,
+    }, {
+        type: 'hd',
+        value: '+10',
     }],
     type: ['法师', '辅助'],
 }, {
