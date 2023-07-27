@@ -300,9 +300,6 @@ export default [{
     avatar: 'ey',
     alias: ['鳄鱼'],
     info: [{
-        type: 'sc',
-        value: 105,
-    }, {
         type: 'zl',
         value: '+20',
     }],
@@ -312,6 +309,9 @@ export default [{
     avatar: 'ez',
     alias: ['ez', '小黄毛'],
     info: [{
+        type: 'sc',
+        value: 95,
+    }, {
         type: 'cs',
         value: 103,
     }],
@@ -445,7 +445,7 @@ export default [{
     alias: ['刮痧'],
     info: [{
         type: 'sc',
-        value: 85,
+        value: 90,
     }, {
         type: 'cd',
         value: '-30',
@@ -766,6 +766,9 @@ export default [{
     }, {
         type: 'gs',
         value: '+2.5',
+    }, {
+        type: 'rx',
+        value: '+20',
     }],
     type: ['射手', '刺客'],
 }, {
@@ -1203,7 +1206,10 @@ export default [{
         value: '-20',
     }, {
         type: 'hd',
-        value: '-10',
+        value: '-15',
+    }, {
+        type: 'zl',
+        value: '-15',
     }],
     type: ['辅助'],
 }, {
@@ -1287,7 +1293,7 @@ export default [{
         value: 105,
     }, {
         type: 'cs',
-        value: 90,
+        value: 95,
     }],
     type: ['法师'],
 }, {
@@ -1502,7 +1508,7 @@ export default [{
         value: 95,
     }, {
         type: 'cs',
-        value: 108,
+        value: 110,
     }],
     type: ['坦克', '辅助'],
 }, {
@@ -1527,6 +1533,9 @@ export default [{
     }, {
         type: 'cs',
         value: 95,
+    }, {
+        type: 'cd',
+        value: '+10',
     }],
     type: ['刺客', '战士'],
 }, {
@@ -1565,7 +1574,7 @@ export default [{
     alias: ['挖掘机'],
     info: [{
         type: 'cs',
-        value: 85,
+        value: 90,
     }, {
         type: 'rx',
         value: '+20',
@@ -1773,7 +1782,10 @@ export default [{
     name: '残月之肃-厄斐琉斯',
     avatar: 'yn',
     alias: ['月男', '吴亦凡'],
-    info: [],
+    info: [{
+        type: 'sc',
+        value: 105
+    }],
     type: ['射手'],
 }, {
     name: '岩雀-塔利亚',
