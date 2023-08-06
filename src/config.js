@@ -108,10 +108,7 @@ export default [{
     name: '殇之木乃伊-阿木木',
     avatar: 'amm',
     alias: [],
-    info: [{
-        type: 'cs',
-        value: 105,
-    }],
+    info: [],
     type: ['坦克'],
 }, {
     name: '黑暗之女-安妮',
@@ -177,6 +174,9 @@ export default [{
     info: [{
         type: 'sc',
         value: 95,
+    }, {
+        type: 'cs',
+        value: 105,
     }],
     type: ['法师'],
 }, {
@@ -333,6 +333,9 @@ export default [{
         type: 'cs',
         value: 95,
     }, {
+        type: 'cd',
+        value: '+10',
+    }, {
         type: 'qt',
         value: '<span class="info">被动</span>初始时间降低至<span class="enhance">5分钟</span>，冷却时间降低至<span class="enhance">150秒</span>',
         enhance: true,
@@ -417,7 +420,7 @@ export default [{
     alias: ['狗头'],
     info: [{
         type: 'sc',
-        value: 95,
+        value: 90,
     }, {
         type: 'cs',
         value: 105,
@@ -597,6 +600,9 @@ export default [{
     }, {
         type: 'cs',
         value: 105,
+    }, {
+        type: 'cd',
+        value: '-20',
     }],
     type: ['法师'],
 }, {
@@ -630,9 +636,6 @@ export default [{
     info: [{
         type: 'sc',
         value: 105,
-    }, {
-        type: 'cs',
-        value: 95,
     }, {
         type: 'rx',
         value: '+20',
@@ -813,7 +816,7 @@ export default [{
         value: 90,
     }, {
         type: 'cs',
-        value: 105,
+        value: 110,
     }],
     type: ['坦克', '战士'],
 }, {
@@ -931,6 +934,9 @@ export default [{
     }, {
         type: 'cs',
         value: 95,
+    }, {
+        type: 'cd',
+        value: '+10',
     }, {
         type: 'rx',
         value: '+20',
@@ -1129,7 +1135,10 @@ export default [{
     name: '诺克萨斯之手-德莱厄斯',
     avatar: 'ns',
     alias: ['诺手'],
-    info: [],
+    info: [{
+        type: 'sc',
+        value: 105,
+    }],
     type: ['战士'],
 }, {
     name: '牛头酋长-阿利斯塔',
@@ -1155,14 +1164,17 @@ export default [{
         value: 110,
     }, {
         type: 'cs',
-        value: 90,
+        value: 95,
     }],
     type: ['辅助', '刺客'],
 }, {
     name: '不屈之枪-潘森',
     avatar: 'ps',
     alias: ['哦哦哦'],
-    info: [],
+    info: [{
+        type: 'sc',
+        value: 105,
+    }],
     type: ['战士', '刺客'],
 }, {
     name: '青钢影-卡密尔',
@@ -1254,7 +1266,7 @@ export default [{
         value: 105,
     }, {
         type: 'cs',
-        value: 95,
+        value: 90,
     }, {
         type: 'zl',
         value: '+20',
@@ -1456,7 +1468,7 @@ export default [{
     alias: ['蘑菇'],
     info: [{
         type: 'sc',
-        value: 90,
+        value: 85,
     }, {
         type: 'cs',
         value: 110,
@@ -1607,7 +1619,7 @@ export default [{
         value: 115,
     }, {
         type: 'zl',
-        value: '-10',
+        value: '-20',
     }],
     type: ['战士', '法师'],
 }, {
@@ -1679,7 +1691,7 @@ export default [{
         value: 90
     }, {
         type: 'cs',
-        value: 105,
+        value: 110,
     }],
     type: ['战士', '法师'],
 }, {
