@@ -244,7 +244,7 @@ export default [{
         value: 80,
     }, {
         type: 'cs',
-        value: 105,
+        value: 110,
     }, {
         type: 'zl',
         value: '-20',
@@ -322,7 +322,7 @@ export default [{
     alias: ['冰鸟'],
     info: [{
         type: 'cs',
-        value: 105,
+        value: 95,
     }],
     type: ['法师'],
 }, {
@@ -423,7 +423,7 @@ export default [{
         value: 90,
     }, {
         type: 'cs',
-        value: 105,
+        value: 110,
     }, {
         type: 'qt',
         value: '<span class="info">Q</span>击杀敌方单位增加<span class="enhance">6</span>点伤害；如果是英雄/大型小兵则增加<span class="enhance">24</span>点伤害',
@@ -504,6 +504,9 @@ export default [{
     }, {
         type: 'cs',
         value: 105,
+    }, {
+        type: 'cd',
+        value: '-10',
     }],
     type: ['法师'],
 },  {
@@ -624,9 +627,6 @@ export default [{
     info: [{
         type: 'cs',
         value: 105,
-    }, {
-        type: 'zl',
-        value: '-5',
     }],
     type: ['战士',  '辅助'],
 }, {
@@ -704,6 +704,9 @@ export default [{
     avatar: 'kn',
     alias: ['闪电松鼠'],
     info: [{
+        type: 'cs',
+        value: 105,
+    }, {
         type: 'cs',
         value: 95,
     }, {
@@ -1041,7 +1044,7 @@ export default [{
     alias: ['蛮子'],
     info: [{
         type: 'sc',
-        value: 115,
+        value: 110,
     }, {
         type: 'cs',
         value: 85,
@@ -1075,6 +1078,9 @@ export default [{
     }, {
         type: 'cs',
         value: 95,
+    }, {
+        type: 'gs',
+        value: '+2.5',
     }],
     type: ['战士'],
 }, {
@@ -1340,6 +1346,9 @@ export default [{
     info: [{
         type: 'cs',
         value: 95,
+    }, {
+        type: 'cd',
+        value: '+10',
     }],
     type: ['法师', '辅助'],
 }, {
@@ -1382,6 +1391,9 @@ export default [{
     info: [{
         type: 'sc',
         value: 95,
+    }, {
+        type: 'cs',
+        value: 105,
     }],
     type: ['射手'],
 }, {
@@ -1737,6 +1749,9 @@ export default [{
     info: [{
         type: 'sc',
         value: 95,
+    }, {
+        type: 'zl',
+        value: '-10',
     }],
     type: ['法师', '战士'],
 }, {
@@ -1944,4 +1959,10 @@ export default [{
         value: 105,
     }],
     type: ['战士'],
+}, {
+    name: '百裂冥犬-纳亚菲利',
+    avatar: 'nyfl',
+    alias: ['暗裔狗狗'],
+    info: [],
+    type: ['刺客', '战士'],
 }];
