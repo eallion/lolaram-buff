@@ -173,7 +173,7 @@ export default [{
     alias: ['冰女'],
     info: [{
         type: 'sc',
-        value: 95,
+        value: 90
     }, {
         type: 'cs',
         value: 105,
@@ -540,6 +540,9 @@ export default [{
     info: [{
         type: 'sc',
         value: 90,
+    }, {
+        type: 'cs',
+        value: 105,
     }],
     type: ['射手'],
 },  {
@@ -614,7 +617,7 @@ export default [{
     alias: [],
     info: [{
         type: 'sc',
-        value: 95,
+        value: 90,
     }, {
         type: 'cs',
         value: 110,
@@ -706,9 +709,6 @@ export default [{
     info: [{
         type: 'cs',
         value: 105,
-    }, {
-        type: 'cs',
-        value: 95,
     }, {
         type: 'zy',
         value: '+20',
@@ -1597,6 +1597,9 @@ export default [{
     avatar: 'wjj',
     alias: ['挖掘机'],
     info: [{
+        type: 'sc',
+        value: 105,
+    }, {
         type: 'cs',
         value: 90,
     }, {
@@ -1818,10 +1821,7 @@ export default [{
     name: '岩雀-塔利亚',
     avatar: 'yq',
     alias: [],
-    info: [{
-        type: 'sc',
-        value: 105
-    }],
+    info: [],
     type: ['法师'],
 }, {
     name: '疾风剑豪-亚索',
@@ -1964,5 +1964,20 @@ export default [{
     avatar: 'nyfl',
     alias: ['暗裔狗狗'],
     info: [],
+    type: ['刺客', '战士'],
+}, {
+    name: '狂厄蔷薇-贝蕾亚',
+    avatar: 'bly',
+    alias: [],
+    info: [{
+        type: 'sc',
+        value: 105,
+    }, {
+        type: 'cs',
+        value: 95,
+    }, {
+        type: 'zl',
+        value: '+30',
+    }],
     type: ['刺客', '战士'],
 }];

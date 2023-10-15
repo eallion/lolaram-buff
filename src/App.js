@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Input, Space, ConfigProvider, theme, Table, Radio, Tag, Typography, Select, Modal, Badge } from 'antd';
 import config, { types } from './config';
-import updateConfig from './update/13.17';
+import updateConfig from './update/13.20';
 import getDataSource from './getDataSource';
 
 const { Paragraph } = Typography;
@@ -109,10 +109,10 @@ export default function Home() {
             }}
         >
             <div className="update" onClick={() => setIsOpen(true)}>
-                <Badge dot>13.17版本更新内容</Badge>
+                <Badge dot>13.20版本更新内容</Badge>
             </div>
             <div className="header">
-                <h1 className="title">英雄联盟极地大乱斗平衡属性一览 (V13.17)</h1>
+                <h1 className="title">英雄联盟极地大乱斗平衡属性一览 (V13.20)</h1>
                 <div className="filter">
                     <Input
                         className="filter-search"
@@ -222,7 +222,7 @@ export default function Home() {
                     }]}
                 />
             </div>
-            <div className="time">更新时间：2023/08/30&nbsp;21:05:00</div>
+            <div className="time">更新时间：2023/10/15&nbsp;19:00:00</div>
             <Modal
                 title="版本更新"
                 open={isOpen}
