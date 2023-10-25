@@ -313,7 +313,7 @@ export default [{
         value: 95,
     }, {
         type: 'cs',
-        value: 103,
+        value: 105,
     }],
     type: ['射手', '法师'],
 }, {
@@ -919,11 +919,8 @@ export default [{
     avatar: 'lw',
     alias: [],
     info: [{
-        type: 'cd',
-        value: '-20',
-    }, {
         type: 'qt',
-        value: '<span class="info">E</span>冷却时间12秒削弱至<span class="abate">16秒</span>',
+        value: '<span class="info">E</span>冷却时间12秒削弱至<span class="abate">14秒</span>',
         enhance: false,
     }],
     type: ['法师'],
@@ -990,7 +987,7 @@ export default [{
     alias: [],
     info: [{
         type: 'sc',
-        value: 94,
+        value: 90,
     }, {
         type: 'cs',
         value: 105,
@@ -1707,6 +1704,10 @@ export default [{
     }, {
         type: 'cs',
         value: 110,
+    }, {
+        type: 'qt',
+        value: '<span class="info">E</span>冷却时间14秒削弱至<span class="abate">18秒</span>',
+        enhance: false,
     }],
     type: ['战士', '法师'],
 }, {
@@ -1742,7 +1743,7 @@ export default [{
         value: '+20',
     }, {
         type: 'zl',
-        value: '+20',
+        value: '+10',
     }],
     type: ['法师', '战士'],
 }, {
@@ -1784,7 +1785,7 @@ export default [{
     alias: [],
     info: [{
         type: 'sc',
-        value: 103
+        value: 105,
     }, {
         type: 'cs',
         value: 97,
@@ -1941,7 +1942,7 @@ export default [{
     alias: ['丁真'],
     info: [{
         type: 'hd',
-        value: '-5'
+        value: '-10'
     }, {
         type: 'zl',
         value: '-5'
@@ -1963,7 +1964,10 @@ export default [{
     name: '百裂冥犬-纳亚菲利',
     avatar: 'nyfl',
     alias: ['暗裔狗狗'],
-    info: [],
+    info: [{
+        type: 'sc',
+        value: 95,
+    }],
     type: ['刺客', '战士'],
 }, {
     name: '狂厄蔷薇-贝蕾亚',
