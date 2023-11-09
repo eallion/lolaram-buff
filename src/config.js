@@ -744,7 +744,7 @@ export default [{
     alias: ['黑哥', '黑人亚索'],
     info: [{
         type: 'cs',
-        value: 90,
+        value: 95,
     }],
     type: ['战士', '坦克'],
 }, {
@@ -1047,7 +1047,7 @@ export default [{
         value: 85,
     }, {
         type: 'zl',
-        value: '+40',
+        value: '+35',
     }],
     type: ['战士', '刺客'],
 }, {
@@ -1703,7 +1703,7 @@ export default [{
         value: 90
     }, {
         type: 'cs',
-        value: 110,
+        value: 105,
     }, {
         type: 'qt',
         value: '<span class="info">E</span>冷却时间14秒削弱至<span class="abate">18秒</span>',
@@ -1816,6 +1816,9 @@ export default [{
     info: [{
         type: 'sc',
         value: 105
+    }, {
+        type: 'cs',
+        value: 95
     }],
     type: ['射手'],
 }, {

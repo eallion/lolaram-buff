@@ -222,7 +222,7 @@ export default function Home() {
                     }]}
                 />
             </div>
-            <div className="time">更新时间：2023/10/25&nbsp;20:00:00</div>
+            <div className="time">更新时间：2023/11/09&nbsp;20:00:00</div>
             <Modal
                 title="版本更新"
                 open={isOpen}
