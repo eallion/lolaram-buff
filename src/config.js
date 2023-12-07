@@ -447,17 +447,15 @@ export default [{
     avatar: 'hb',
     alias: ['刮痧'],
     info: [{
-        type: 'sc',
-        value: 90,
-    }, {
-        type: 'cd',
-        value: '-30',
-    }, {
         type: 'gs',
         value: '+2.5',
     }, {
         type: 'qt',
         value: '<span class="info">W</span>冷却时间18-4秒削弱到<span class="abate">21-9秒</span>',
+        enhance: false,
+    }, {
+        type: 'qt',
+        value: '<span class="info">R</span>冷却时间100/80/60秒削弱到<span class="abate">110/90/70秒</span>',
         enhance: false,
     }],
     type: ['射手', '辅助'],
@@ -736,16 +734,16 @@ export default [{
     name: '虚空行者-卡萨丁',
     avatar: 'ksd',
     alias: [],
-    info: [],
+    info: [{
+        type: 'cs',
+        value: 95,
+    }],
     type: ['法师', '战士'],
 }, {
     name: '纳祖玛之傲-奎桑提',
     avatar: 'kst',
     alias: ['黑哥', '黑人亚索'],
-    info: [{
-        type: 'cs',
-        value: 95,
-    }],
+    info: [],
     type: ['战士', '坦克'],
 }, {
     name: '不祥之刃-卡特琳娜',
@@ -799,10 +797,7 @@ export default [{
     name: '机械公敌-兰博',
     avatar: 'lb',
     alias: [],
-    info: [{
-        type: 'cs',
-        value: 95,
-    }],
+    info: [],
     type: ['法师', '战士'],
 }, {
     name: '披甲龙龟-拉莫斯',
@@ -1494,10 +1489,7 @@ export default [{
     name: '河流之主-塔姆',
     avatar: 'tm2',
     alias: [],
-    info: [{
-        type: 'cs',
-        value: 95,
-    }],
+    info: [],
     type: ['战士', '坦克'],
 }, {
     name: '铁铠冥魂-莫德凯撒',
@@ -1638,7 +1630,10 @@ export default [{
     name: '逆羽-霞',
     avatar: 'x',
     alias: [],
-    info: [],
+    info: [{
+        type: 'sc',
+        value: 105,
+    }],
     type: ['射手'],
 }, {
     name: '恶魔小丑-萨科',
