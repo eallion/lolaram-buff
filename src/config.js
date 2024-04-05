@@ -1572,13 +1572,13 @@ export default [{
         value: 90,
     }, {
         type: 'cs',
-        value: 105,
+        value: 110,
     }, {
         type: 'hd',
-        value: '-20',
+        value: '-10',
     }, {
         type: 'zl',
-        value: '-20',
+        value: '-10',
     }],
     type: ['战士'],
 }, {
