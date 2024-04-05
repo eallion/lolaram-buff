@@ -122,7 +122,7 @@ export default [{
         value: 105,
     }, {
         type: 'hd',
-        value: '-20',
+        value: '-10',
     }],
     type: ['法师'],
 }, {
@@ -173,7 +173,7 @@ export default [{
     alias: ['冰女'],
     info: [{
         type: 'sc',
-        value: 90
+        value: 95
     }, {
         type: 'cs',
         value: 105,
@@ -211,7 +211,7 @@ export default [{
     alias: ['大虫子'],
     info: [{
         type: 'cs',
-        value: 105,
+        value: 110,
     }],
     type: ['坦克', '法师'],
 }, {
@@ -292,7 +292,7 @@ export default [{
     alias: ['老徐'],
     info: [{
         type: 'cs',
-        value: 110,
+        value: 105,
     }],
     type: ['战士'],
 }, {
@@ -301,7 +301,7 @@ export default [{
     alias: ['鳄鱼'],
     info: [{
         type: 'zl',
-        value: '+20',
+        value: '+5',
     }],
     type: ['战士'],
 }, {
@@ -320,10 +320,7 @@ export default [{
     name: '冰晶凤凰-艾尼维亚',
     avatar: 'fh',
     alias: ['冰鸟'],
-    info: [{
-        type: 'cs',
-        value: 95,
-    }],
+    info: [],
     type: ['法师'],
 }, {
     name: '英勇投弹手-库奇',
@@ -353,7 +350,11 @@ export default [{
         value: 105,
     }, {
         type: 'hd',
-        value: '-10',
+        value: '-5',
+    }, {
+        type: 'qt',
+        value: '<span class="info">Q</span>冷却时间14秒削弱到<span class="abate">16秒</span>',
+        enhance: false,
     }],
     type: ['法师', '辅助'],
 }, {
@@ -423,7 +424,7 @@ export default [{
         value: 90,
     }, {
         type: 'cs',
-        value: 110,
+        value: 105,
     }, {
         type: 'qt',
         value: '<span class="info">Q</span>击杀敌方单位增加<span class="enhance">6</span>点伤害；如果是英雄/大型小兵则增加<span class="enhance">24</span>点伤害',
@@ -451,7 +452,7 @@ export default [{
         value: '+2.5',
     }, {
         type: 'qt',
-        value: '<span class="info">W</span>冷却时间18-4秒削弱到<span class="abate">21-9秒</span>',
+        value: '<span class="info">W</span>冷却时间全等级<span class="abate">18/17.5/17/16.5/16秒</span>',
         enhance: false,
     }, {
         type: 'qt',
@@ -547,10 +548,7 @@ export default [{
     name: '灵罗娃娃-格温',
     avatar: 'jd',
     alias: ['剪刀妹'],
-    info: [{
-        type: 'sc',
-        value: 105,
-    }],
+    info: [],
     type: ['战士'],
 },  {
     name: '无双剑姬-菲奥娜',
@@ -591,7 +589,7 @@ export default [{
     alias: ['宝石', '基佬'],
     info: [{
         type: 'cs',
-        value: 105,
+        value: 110,
     }],
     type: ['辅助', '坦克'],
 },  {
@@ -604,9 +602,6 @@ export default [{
     }, {
         type: 'cs',
         value: 105,
-    }, {
-        type: 'cd',
-        value: '-20',
     }],
     type: ['法师'],
 }, {
@@ -618,7 +613,7 @@ export default [{
         value: 90,
     }, {
         type: 'cs',
-        value: 110,
+        value: 105,
     }],
     type: ['法师',  '坦克'],
 }, {
@@ -637,9 +632,6 @@ export default [{
     info: [{
         type: 'sc',
         value: 105,
-    }, {
-        type: 'rx',
-        value: '+20',
     }],
     type: ['战士'],
 }, {
@@ -678,9 +670,6 @@ export default [{
     avatar: 'jt',
     alias: ['几何桶'],
     info: [{
-        type: 'sc',
-        value: 105,
-    }, {
         type: 'cs',
         value: 95,
     }],
@@ -689,7 +678,10 @@ export default [{
     name: '皎月女神-戴安娜',
     avatar: 'jy',
     alias: [],
-    info: [],
+    info: [{
+        type: 'cs',
+        value: 95,
+    }],
     type: ['法师', '战士'],
 }, {
     name: '暴怒骑士-克烈',
@@ -814,7 +806,7 @@ export default [{
         value: 90,
     }, {
         type: 'cs',
-        value: 110,
+        value: 105,
     }],
     type: ['坦克', '战士'],
 }, {
@@ -826,7 +818,7 @@ export default [{
         value: 105,
     }, {
         type: 'hd',
-        value: '+10',
+        value: '+5',
     }],
     type: ['辅助'],
 }, {
@@ -943,10 +935,14 @@ export default [{
     alias: ['轮子妈',],
     info: [{
         type: 'sc',
-        value: 85,
+        value: 90,
     }, {
         type: 'cs',
-        value: 105,
+        value: 108,
+    }, {
+        type: 'qt',
+        value: '<span class="info">Q</span>冷却时间10/9.5/9/8.5/8秒削弱到<span class="abate">14/13/12/11/10秒</span>',
+        enhance: false,
     }],
     type: ['射手'],
 }, {
@@ -958,7 +954,7 @@ export default [{
         value: 90,
     }, {
         type: 'cs',
-        value: 110,
+        value: 105,
     }, {
         type: 'zl',
         value: '-10',
@@ -982,7 +978,7 @@ export default [{
     alias: [],
     info: [{
         type: 'sc',
-        value: 90,
+        value: 95,
     }, {
         type: 'cs',
         value: 105,
@@ -1147,7 +1143,7 @@ export default [{
         value: 95,
     }, {
         type: 'cs',
-        value: 110,
+        value: 105,
     }, {
         type: 'zl',
         value: '-20',
@@ -1186,7 +1182,10 @@ export default [{
         value: 95,
     }, {
         type: 'hd',
-        value: '+20',
+        value: '+10',
+    }, {
+        type: 'cd',
+        value: '+10',
     }],
     type: ['战士'],
 }, {
@@ -1206,9 +1205,6 @@ export default [{
     avatar: 'qn',
     alias: ['琴女'],
     info: [{
-        type: 'sc',
-        value: 95,
-    }, {
         type: 'cs',
         value: 110,
     }, {
@@ -1244,9 +1240,6 @@ export default [{
     info: [{
         type: 'sc',
         value: 95,
-    }, {
-        type: 'cs',
-        value: 105,
     }, {
         type: 'zl',
         value: '-10',
@@ -1432,6 +1425,9 @@ export default [{
         type: 'cs',
         value: 95,
     }, {
+        type: 'sc',
+        value: 95,
+    }, {
         type: 'hd',
         value: '+10',
     }],
@@ -1472,7 +1468,7 @@ export default [{
     alias: ['蘑菇'],
     info: [{
         type: 'sc',
-        value: 85,
+        value: 90,
     }, {
         type: 'cs',
         value: 110,
@@ -1482,6 +1478,10 @@ export default [{
     }, {
         type: 'qt',
         value: '<span class="info">R</span>对小兵造成<span class="abate">50%</span>伤害',
+        enhance: false,
+    }, {
+        type: 'qt',
+        value: '<span class="info">R</span>充能数3/4/5秒→<span class="abate">2/3/4</span>',
         enhance: false,
     }],
     type: ['法师'],
@@ -1498,6 +1498,9 @@ export default [{
     info: [{
         type: 'sc',
         value: 95,
+    }, {
+        type: 'cs',
+        value: 105,
     }],
     type: ['战士'],
 }, {
@@ -1509,7 +1512,7 @@ export default [{
         value: 95,
     }, {
         type: 'cs',
-        value: 103,
+        value: 110,
     }],
     type: ['射手'],
 }, {
@@ -1571,9 +1574,6 @@ export default [{
         type: 'cs',
         value: 105,
     }, {
-        type: 'cd',
-        value: '-20',
-    }, {
         type: 'hd',
         value: '-20',
     }, {
@@ -1591,12 +1591,6 @@ export default [{
     }, {
         type: 'cs',
         value: 90,
-    }, {
-        type: 'rx',
-        value: '+20',
-    }, {
-        type: 'zl',
-        value: '+20',
     }],
     type: ['刺客', '战士'],
 }, {
@@ -1658,6 +1652,9 @@ export default [{
     }, {
         type: 'cs',
         value: 95,
+    }, {
+        type: 'cd',
+        value: '+15',
     }],
     type: ['法师'],
 }, {
@@ -1695,7 +1692,7 @@ export default [{
     alias: ['小鹿'],
     info: [{
         type: 'sc',
-        value: 90
+        value: 95
     }, {
         type: 'cs',
         value: 105,
@@ -1809,9 +1806,6 @@ export default [{
     avatar: 'yn',
     alias: ['月男', '吴亦凡'],
     info: [{
-        type: 'sc',
-        value: 105
-    }, {
         type: 'cs',
         value: 95
     }],
@@ -1834,13 +1828,17 @@ export default [{
     alias: ['炸弹人'],
     info: [{
         type: 'sc',
-        value: 80
+        value: 85
     }, {
         type: 'cs',
         value: 120
     }, {
         type: 'cd',
         value: '-20'
+    }, {
+        type: 'qt',
+        value: '<span class="info">被动</span>对建筑物伤害250%→<span class="abate">150%</span>，<span class="info">W</span>对防御塔斩杀线<span class="info">25/27.5/30/32.5/35%最大生命值</span>→<span class="abate">12.5/15/17.5/20/22.5%最大生命值</span>',
+        enhance: false,
     }],
     type: ['法师'],
 }, {
@@ -1850,6 +1848,9 @@ export default [{
     info: [{
         type: 'cs',
         value: 96
+    }, {
+        type: 'zl',
+        value: '+10'
     }],
     type: ['战士'],
 }, {
@@ -1870,7 +1871,7 @@ export default [{
     alias: ['三炮'],
     info: [{
         type: 'sc',
-        value: 90
+        value: 93
     }],
     type: ['法师'],
 }, {
@@ -1889,7 +1890,10 @@ export default [{
     name: '德邦总管-赵信',
     avatar: 'zx',
     alias: ['菊花信'],
-    info: [],
+    info: [{
+        type: 'sc',
+        value: 95
+    }],
     type: ['战士', '刺客'],
 }, {
     name: '暮光星灵-佐伊',
@@ -1955,7 +1959,10 @@ export default [{
         value: 95,
     }, {
         type: 'cs',
-        value: 105,
+        value: 110,
+    }, {
+        type: 'zl',
+        value: '-20',
     }],
     type: ['战士'],
 }, {
@@ -1965,6 +1972,9 @@ export default [{
     info: [{
         type: 'sc',
         value: 95,
+    }, {
+        type: 'cd',
+        value: '+10',
     }],
     type: ['刺客', '战士'],
 }, {
@@ -1975,11 +1985,8 @@ export default [{
         type: 'sc',
         value: 105,
     }, {
-        type: 'cs',
-        value: 95,
-    }, {
         type: 'zl',
-        value: '+30',
+        value: '+15',
     }],
     type: ['刺客', '战士'],
 }];
