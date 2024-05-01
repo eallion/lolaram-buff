@@ -1100,11 +1100,14 @@ export default [{
     avatar: 'nm',
     alias: [],
     info: [{
+        type: 'sc',
+        value: 95,
+    }, {
         type: 'cs',
         value: 105,
     }, {
         type: 'zl',
-        value: '-5',
+        value: '-10',
     }],
     type: ['辅助'],
 }, {
@@ -1989,4 +1992,25 @@ export default [{
         value: '+15',
     }],
     type: ['刺客', '战士'],
+}, {
+    name: '异画师-彗',
+    avatar: 'hui',
+    alias: [],
+    info: [{
+        type: 'cd',
+        value: '+10',
+    }],
+    type: ['法师'],
+}, {
+    name: '炽炎雏龙-斯莫德',
+    avatar: 'smd',
+    alias: ['小火龙', '妈宝龙'],
+    info: [{
+        type: 'cs',
+        value: 105,
+    }, {
+        type: 'cd',
+        value: '-10',
+    }],
+    type: ['法师'],
 }];
