@@ -1227,7 +1227,7 @@ export default [{
     alias: ['草履虫', '超模'],
     info: [{
         type: 'sc',
-        value: 110,
+        value: 115,
     }, {
         type: 'cs',
         value: 90,
@@ -1413,6 +1413,9 @@ export default [{
     avatar: 'szg',
     alias: ['狮子狗'],
     info: [{
+        type: 'sc',
+        value: 105,
+    }, {
         type: 'cs',
         value: 92,
     }, {
@@ -1453,7 +1456,7 @@ export default [{
     alias: ['螳螂'],
     info: [{
         type: 'sc',
-        value: 105,
+        value: 110,
     }, {
         type: 'cs',
         value: 90,
@@ -1792,7 +1795,7 @@ export default [{
     alias: [],
     info: [{
         type: 'sc',
-        value: 105,
+        value: 110,
     }, {
         type: 'cs',
         value: 90,
@@ -1884,9 +1887,6 @@ export default [{
     info: [{
         type: 'sc',
         value: 105
-    }, {
-        type: 'cs',
-        value: 92
     }],
     type: ['战士', '坦克'],
 }, {
@@ -1974,7 +1974,7 @@ export default [{
     alias: ['暗裔狗狗'],
     info: [{
         type: 'sc',
-        value: 95,
+        value: 110,
     }, {
         type: 'cd',
         value: '+10',
@@ -1989,7 +1989,7 @@ export default [{
         value: 105,
     }, {
         type: 'zl',
-        value: '+15',
+        value: '+20',
     }],
     type: ['刺客', '战士'],
 }, {
